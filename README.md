@@ -27,7 +27,7 @@ The Shadowsocks local (sslocal) config file is `/etc/shadowsocks.local.json` [is
 
 The Shadowsocks public (ssserver) config file is `/etc/shadowsocks.json` [is here](./shadowsocks.json)
 
-The deffrent between the 2 files, is that we specify "pid-file":"/var/run/shadowsocks.local.pid" for the local Daemon
+The different between the 2 files, is that we specify "pid-file":"/var/run/shadowsocks.local.pid" for the local Daemon
 
 
 We can run the Shadowsocks server for localhost to serve Privoxy as
