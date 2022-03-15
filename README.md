@@ -11,15 +11,15 @@ The Full Article: [Build Privoxy And Shadowsocks Proxy Servers On Ubuntu 20.04](
 
 We will:
 
-1.Update Ubuntu And Install The Prerequisites
-2.Install Shadowsocks Python Server
-3.Configure Shadowsocks
-4.Install Privoxy
-5.Configure Privoxy
-6.Start The Servers
-7.Tuning Ubuntu for network performance
-8.Using Shadowsocks Client
-9.Using Privoxy HTTP(S)
+1. Update Ubuntu And Install The Prerequisites
+2. Install Shadowsocks Python Server
+3. Configure Shadowsocks
+4. Install Privoxy
+5. Configure Privoxy
+6. Start The Servers
+7. Tuning Ubuntu for network performance
+8. Using Shadowsocks Client
+9. Using Privoxy HTTP(S)
 
 ## Configure Puplic and Local Shadowsocks server
 
