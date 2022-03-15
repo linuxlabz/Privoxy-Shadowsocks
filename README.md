@@ -11,15 +11,16 @@ The Full Article: [Build Privoxy And Shadowsocks Proxy Servers On Ubuntu 20.04](
 
 ### Configure Puplic and Local Shadowsocks server
 
-The Shadowsocks local config file is `/etc/shadowsocks.local.json` [is here](./shadowsocks.local.json)
+The Shadowsocks local (sslocal) config file is `/etc/shadowsocks.local.json` [is here](./shadowsocks.local.json)
 
-The Shadowsocks public config file is `/etc/shadowsocks.json` [is here](./shadowsocks.json)
+The Shadowsocks public (ssserver) config file is `/etc/shadowsocks.json` [is here](./shadowsocks.json)
 
 The deffrent between the 2 files, is that we specify "pid-file":"/var/run/shadowsocks.local.pid" for the local Daemon
 
 
 We can run the Shadowsocks server for localhost to serve Privoxy as
 > sslocal -c /etc/shadowsocks.local.json -d start
+
 And run the public server to listen to outside world
 > ssserver -c /etc/shadowsocks.json -d start
 
