@@ -54,7 +54,7 @@ We need to run the following command `# pip install https://github.com/shadowsoc
 
 ## Tuning Kernel Configs for network performace
 Set BBR tcp_congestion_control And Tunning The Kernel For Shadowsocks
-Create the file [local.conf](../Shadowsocks/blob/main/local.conf) into the sysctl configuration path `/etc/sysctl.d/local.conf` and insert the following configs and apply changes by runngin `# sysctl -p`
+Create the file [local.conf](../../Shadowsocks/blob/main/local.conf) into the sysctl configuration path `/etc/sysctl.d/local.conf` and insert the following configs and apply changes by runngin `# sysctl -p`
 
 
 
