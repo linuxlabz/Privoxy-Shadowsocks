@@ -7,9 +7,21 @@ Using Privoxy beside Shadowsocks, as the Shadowsocks Tunneling Proxy Server has 
 
 But with Privoxy as an interface, we can enjoy Shadowsocks regulare with the outilne clients, and same time connecting it with our browsers and apps as HTTP/HTTPS Proxy using Privoxy.
 
-The Full Article: [Build Privoxy And Shadowsocks Proxy Servers On Ubuntu 20.04](Build Privoxy And Shadowsocks Proxy Servers On Ubuntu 20.04) 
+The Full Article: [Build Privoxy And Shadowsocks Proxy Servers On Ubuntu 20.04](https://netslovers.com/2022/03/15/privoxy-shadowsocks-proxy-servers-ubuntu/) 
 
-### Configure Puplic and Local Shadowsocks server
+We will:
+
+1.Update Ubuntu And Install The Prerequisites
+2.Install Shadowsocks Python Server
+3.Configure Shadowsocks
+4.Install Privoxy
+5.Configure Privoxy
+6.Start The Servers
+7.Tuning Ubuntu for network performance
+8.Using Shadowsocks Client
+9.Using Privoxy HTTP(S)
+
+## Configure Puplic and Local Shadowsocks server
 
 The Shadowsocks local (sslocal) config file is `/etc/shadowsocks.local.json` [is here](./shadowsocks.local.json)
 
@@ -25,7 +37,7 @@ And run the public server to listen to outside world
 > ssserver -c /etc/shadowsocks.json -d start
 
 
-### Configure Privoxy to forward requests to shadowsocks local server at port 1080
+## Configure Privoxy to forward requests to shadowsocks local server at port 1080
 The config file ` /etc/privoxy/config `
 ~~~
 #listen-address 127.0.0.1:8118
@@ -37,4 +49,14 @@ forward-socks5t / 127.0.0.1:1080 .
 # ============
 ~~~
 
-###
+## Installing Shadowsocks Python Server
+We need to run the following command `# pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip`
+
+## Tuning Kernel Configs for network performace
+Set BBR tcp_congestion_control And Tunning The Kernel For Shadowsocks
+Create the file [local.conf](../Shadowsocks/blob/main/local.conf) into the sysctl configuration path `/etc/sysctl.d/local.conf` and insert the following configs and apply changes by runngin `# sysctl -p`
+
+
+
+
+
